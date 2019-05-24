@@ -1,0 +1,17 @@
+server:
+  port: 8030
+
+spring:
+  application:
+    name: elasticsearch-api-server
+  profiles:
+    active: dev
+  elasticsearch:
+    jest:
+      uris: https://localhost:9200
+      read-timeout: 200000 #读取超时时间
+      connection-timeout: 200000 #连接超时时间
+      username: admin
+      password: admin
+      guardFlag: true
+
